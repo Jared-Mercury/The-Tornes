@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div id="instructions">
+        <h2>Specaial thanks to my brother, best friend and partner in crime - Brock - without you I wouldn't be able to achieve what I have!</h2>
+        <br>
+        <h1>Welcome to "The Thornes" RPG!</h1>
+        <h2>Please read the instructions below, and when you are ready, click "START GAME"</h2>
+        <p>You begin the game as a party of five characters - Jedi Masters Obi Wan Kenobi and Anakin Skywalker, along with their padawans - Ahsoka Tano and Jason Thorne and their new foundling Jared. Each character has a certain set of skills that are gonna
+            be useful during the game. </p>
+
+        <p>During their mission your party encounters different enemies. In order to fight them, you may plan your attack. You may roll the dice and choose a character to the fight according to the results.</p>
+
+        <p>You have a set of two dice that you roll simultaneously upon clicking the "Roll Dice" button. One die is a cube and the other one is a tetrahedron. Remember that when you decide to roll the dice, so does your enemy!</p>
+
+        <p> The tetrahedron decides on the skill that will be used in the upcoming attack. Upon rolling one - the sill is intelligence, upon rolling two - the skill is stealth and upon rolling 3 - the skill is force. </p>
+
+        <p>The cube die is used to determine the strength of your attack. The number on the dice is automatically multiplied by the value of the drawn skill upon clicking the "Attack" button. Before attacking you may decide to change the active character
+            to the one that has the highest value in the drawn skill (or you can choose them using different criteria), but remember, once your character's health value reaches zero, they are dead and therefore yoiu won't be able to use them to fight
+            anymore.
+            <br>
+            <br>
+            <img width="60px" height="60px" src="images/dice_T.png">
+            <span>Tetrahedral die - used to determine which of the fours skills will be used in the next attack: strength, force, intelligence, stealth</span>
+            <br>
+            <img width="60px" height="60px" src="images/dice_C.png"><span>Cubic die - used to determine the strength of the upcoming attack</span>
+    </div>
+    <button id="start-button">START GAME</button>
+    <main>
+        <div id="hero">
+            <!-- CHALLENGE -->
+            <!-- 1. Render the Wizard card from index.js -->
+
+        </div>
+        <div id="monster">
+            <!-- CHALLENGE -->
+            <!-- 2. Render the Orc card from index.js -->
+
+
+        </div>
+    </main>
+    <section id="actions">
+    </section>
+
+    <div id="shortInstructions" class="hiddenVisibility">
+        <p>Short instructions:</p>
+        <ul>
+            <li>Tetrahedral die decides on the skill</li>
+            <li>Strength of the attack = skill x cubic die</li>
+            <li>When you roll the dice, so does the enemy</li>
+
+    </div>
+
+    <div id="winner" class="invisible">
+        <h1>CONGRATULATIONS!</h1>
+        <h2>You've managed to make it through your first mission! Gather your party, go back to the temple and get some well deserved rest. Hopefully you'll save the galaxy one more time!</h2>
+    </div>
+
+    <div id="loser" class="invisible">
+        <h1>DON'T GIVE UP!</h1>
+        <h2>I'm afraid you've lost your party on your way through the Sith territories... But don't worry, you've probably heard about Darth Plagueus the Wise! You know, he found a way to cheat death. Click "Try again" and you'll be able to use this power
+            to get your party back on their feet!</h2>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
